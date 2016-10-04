@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zdS-pL-45b">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u7k-n5-Uk7">
+            <objects>
+                <navigationController id="zdS-pL-45b" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C7S-8S-gQT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IrF-dt-DTl" kind="relationship" relationship="rootViewController" id="mlh-1k-dwr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bKP-Zi-PYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="-293"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YKj-UK-YLT">
+            <objects>
+                <viewController id="IrF-dt-DTl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kas-QZ-als"/>
+                        <viewControllerLayoutGuide type="bottom" id="YBo-kw-DwV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="otU-NK-HcM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc7-53-ema">
+                                <rect key="frame" x="60" y="114" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="DuW-N7-VQy"/>
+                                    <constraint firstAttribute="height" constant="30" id="jFw-8h-GUM"/>
+                                </constraints>
+                                <state key="normal" title="Basic Demo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Sk9-SG-snx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFn-2f-HKJ">
+                                <rect key="frame" x="60" y="163" width="200" height="30"/>
+                                <state key="normal" title="Snapping View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="snQ-S2-TEi" kind="show" id="jjF-43-E2Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLP-TD-VR3">
+                                <rect key="frame" x="60" y="214" width="200" height="30"/>
+                                <state key="normal" title="Bouncing side view">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QdO-mG-QU1" kind="show" id="3QN-N4-rKN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9H-so-6HA">
+                                <rect key="frame" x="60" y="260" width="200" height="30"/>
+                                <state key="normal" title="Vibrating View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ONl-J3-qHB" kind="show" id="Ywo-ua-AWJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sFn-2f-HKJ" firstAttribute="height" secondItem="Wc7-53-ema" secondAttribute="height" id="2aK-Yk-N8i"/>
+                            <constraint firstItem="k9H-so-6HA" firstAttribute="top" secondItem="TLP-TD-VR3" secondAttribute="bottom" constant="16" id="BX5-Nb-Sq6"/>
+                            <constraint firstAttribute="centerX" secondItem="Wc7-53-ema" secondAttribute="centerX" id="GdB-VG-fFf"/>
+                            <constraint firstItem="sFn-2f-HKJ" firstAttribute="width" secondItem="TLP-TD-VR3" secondAttribute="width" id="JSF-pD-VTQ"/>
+                            <constraint firstItem="k9H-so-6HA" firstAttribute="width" secondItem="TLP-TD-VR3" secondAttribute="width" id="RC9-7i-uOc"/>
+                            <constraint firstAttribute="centerX" secondItem="Wc7-53-ema" secondAttribute="centerX" id="Sw2-HS-LIs"/>
+                            <constraint firstItem="Wc7-53-ema" firstAttribute="top" secondItem="Kas-QZ-als" secondAttribute="bottom" constant="50" id="Uyg-vG-cjH"/>
+                            <constraint firstAttribute="centerX" secondItem="TLP-TD-VR3" secondAttribute="centerX" id="YW7-pv-Yza"/>
+                            <constraint firstAttribute="centerX" secondItem="k9H-so-6HA" secondAttribute="centerX" id="ZWv-y8-fkk"/>
+                            <constraint firstItem="sFn-2f-HKJ" firstAttribute="width" secondItem="Wc7-53-ema" secondAttribute="width" id="hUw-XT-zgj"/>
+                            <constraint firstItem="sFn-2f-HKJ" firstAttribute="top" secondItem="Wc7-53-ema" secondAttribute="bottom" constant="19" id="iUa-Np-0qb"/>
+                            <constraint firstAttribute="centerX" secondItem="sFn-2f-HKJ" secondAttribute="centerX" id="jf4-ae-n1b"/>
+                            <constraint firstItem="sFn-2f-HKJ" firstAttribute="height" secondItem="TLP-TD-VR3" secondAttribute="height" id="kkh-Fv-i2P"/>
+                            <constraint firstItem="k9H-so-6HA" firstAttribute="height" secondItem="TLP-TD-VR3" secondAttribute="height" id="luZ-rm-j8U"/>
+                            <constraint firstItem="TLP-TD-VR3" firstAttribute="top" secondItem="sFn-2f-HKJ" secondAttribute="bottom" constant="21" id="t2f-es-1Yj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="W2m-Nc-ZMO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGQ-KL-Rc3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="472" y="-293"/>
+        </scene>
+        <!--Vibrating View Controller-->
+        <scene sceneID="uTy-vj-dOo">
+            <objects>
+                <viewController storyboardIdentifier="vibratingView" id="ONl-J3-qHB" customClass="JKVibratingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xSL-y6-HHF"/>
+                        <viewControllerLayoutGuide type="bottom" id="YvC-cO-lWT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L2P-8X-GaU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yhX-E7-AbR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="-241"/>
+        </scene>
+        <!--Snapping View Demo View Controller-->
+        <scene sceneID="pPK-ST-2vt">
+            <objects>
+                <viewController storyboardIdentifier="snapView" id="snQ-S2-TEi" customClass="JKSnappingViewDemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kIF-10-vaD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Btc-Uz-MjJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="95e-hR-sV8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RVl-qc-lmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="265"/>
+        </scene>
+        <!--App CodaUI Dynamics Sample View Controller-->
+        <scene sceneID="XEG-Mu-PSM">
+            <objects>
+                <viewController storyboardIdentifier="appcoda" id="QdO-mG-QU1" customClass="JKAppCodaUIDynamicsSampleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RNI-wK-fBr"/>
+                        <viewControllerLayoutGuide type="bottom" id="s37-Xn-ae0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xnu-Es-fXK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="el5-jh-l6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1095" y="265"/>
+        </scene>
+    </scenes>
+</document>
